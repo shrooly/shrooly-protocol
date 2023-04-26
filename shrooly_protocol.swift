@@ -1,5 +1,5 @@
 public enum BluetoothFunctions {
-	public static let PROTOCOL_VERSION_MAJOR = "2",
+	public static let PROTOCOL_VERSION_MAJOR = "3",
 	public static let PROTOCOL_VERSION_MINOR = "0",
 	public static let PROTOCOL_VERSION_PATCH = "0",
 	public static let CHAR_DATETIME = "00000001-0001-3233-544D-5348524F4C59",
