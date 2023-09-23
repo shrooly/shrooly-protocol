@@ -2,7 +2,6 @@ SERVICE_ID	CHAR_ID	CHAR_NAME	CHAR_TYPE	CHAR_PROPERTIES	CHAR_UUID	COMMENT
 SERVICE_SYSTEM	CHAR_DATETIME	Datetime	UINT32	RW	00000001-0001-3233-544D-5348524F4C59	64bit UNIX epoch timestamp
 SERVICE_SYSTEM	CHAR_DEVICE_INFO	Device info	STRING	R	00000002-0001-3233-544D-5348524F4C59	Reporting MAC, device-type and fw-version
 SERVICE_SYSTEM	CHAR_NAME	Name	STRING	RW	00000003-0001-3233-544D-5348524F4C59	Format: shrooly-XXXXXX, where the Xs represent the last 6 characters of the MAC address
-SERVICE_SYSTEM	CHAR_NAME	Name	STRING	RW	00000003-0001-3233-544D-5348524F4C59	Error codes, custom format
 SERVICE_SYSTEM	CHAR_ERROR_CODE	Error code	BYTEARRAY	R+NOTIFY	00000004-0001-3233-544D-5348524F4C59	Error codes, custom format
 SERVICE_SYSTEM	CHAR_RESTORE_DEVICE	Restore factory settings	UINT8	W	00000007-0001-3233-544D-5348524F4C59	Writing a '1' here restores the device to factory settings
 SERVICE_SYSTEM	CHAR_REBOOT_DEVICE	Reboot device	UINT8	W	00000008-0001-3233-544D-5348524F4C59	Writing a '1' here resets the device
@@ -20,8 +19,8 @@ SERVICE_MONITORING	CHAR_RGB_COLOR	RGB LED color	BYTEARRAY	RW	0000000B-0002-3233-
 SERVICE_MONITORING	CHAR_RGB_EFFECT	RGB LED animation type	UINT8	RW	0000000C-0002-3233-544D-5348524F4C59	0-OFF, 1-STATIC, 2-BLINK, 3-BREATHE
 SERVICE_MONITORING	CHAR_BUZZER_FREQ	Buzzer frequency	UINT16	RW	0000000D-0002-3233-544D-5348524F4C59	0 = off. Multiplied by 10, actual range is 100-10kHz
 SERVICE_MONITORING	CHAR_BUZZER_STATUS	Buzzer status	UINT8	RW	0000000E-0002-3233-544D-5348524F4C59	0-OFF, 1-ON
-SERVICE_OTA	CHAR_OTA_CTRL	OTA control	UINT8	RW+NOTIFY	00000001-0003-3233-544D-5348524F4C59	OTA FW update: Used to initiate and control the update process. 0-IDLE, 1-REQUEST OTA, 0-DONE
-SERVICE_FILE_TRANSFER	CHAR_FILE_CTRL	File transfer control	UINT8	W	00000001-0004-3233-544D-5348524F4C59	1 - starts a file transfer (the length, checksum, and file name characteristics should already have been set), 2 - cancel any pending file transfers. All other commands are undefined.
+SERVICE_OTA	CHAR_OTA_CTRL	OTA control	UINT8	RW+NOTIFY	00000001-0003-3233-544D-5348524F4C59	Used to initiate and control the update process. 0-IDLE, 1-REQUEST OTA, 0-DONE
+SERVICE_FILE_TRANSFER	CHAR_FILE_CTRL	File transfer control	UINT8	W	00000001-0004-3233-544D-5348524F4C59	1 - starts a file transfer, 2 - cancel any pending file transfers. All other commands are undefined.
 SERVICE_FILE_TRANSFER	CHAR_FILE_MAX_LEN	File max file length	UINT32	R	00000002-0004-3233-544D-5348524F4C59	Read-only attribute that defines how large files the ESP32 can handle.
 SERVICE_FILE_TRANSFER	CHAR_FILE_LEN	File transfer file length	UINT32	W	00000003-0004-3233-544D-5348524F4C59	Write the expected total length of the file in bytes to this characteristic before sending the command to transfer a file.
 SERVICE_FILE_TRANSFER	CHAR_FILE_BLOCK	File transfer file block	UINT8	W	00000004-0004-3233-544D-5348524F4C59	Each data block is written here during the transfer.
