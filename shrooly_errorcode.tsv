@@ -1,0 +1,6 @@
+NAME	GROUP	CODE	SEVERITY	STATE	TYPE	COMMENT
+VOLTAGE_LOW	2	1	6	Warning	NULL	VBUS is too low.
+VOLTAGE_HIGH	2	2	7	Warning	NULL	VBUS is too high.
+CIRC_FAN_BLOCKED	4	1	6	Warning	NULL	Circ fan is blocked.
+WATER_LOW	6	1	2	Warning	NULL	Water tank is almost empty.
+WATER_EMPTY	6	2	3	Warning	NULL	Water tank is empty.
