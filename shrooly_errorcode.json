@@ -1,5 +1,5 @@
-{
-    "VOLTAGE_LOW": {
+[
+    {
         "NAME": "VOLTAGE_LOW",
         "GROUP": "2",
         "CODE": "1",
@@ -8,7 +8,7 @@
         "TYPE": "NULL",
         "COMMENT": "VBUS is too low."
     },
-    "VOLTAGE_HIGH": {
+    {
         "NAME": "VOLTAGE_HIGH",
         "GROUP": "2",
         "CODE": "2",
@@ -17,7 +17,7 @@
         "TYPE": "NULL",
         "COMMENT": "VBUS is too high."
     },
-    "CIRC_FAN_BLOCKED": {
+    {
         "NAME": "CIRC_FAN_BLOCKED",
         "GROUP": "4",
         "CODE": "1",
@@ -26,7 +26,7 @@
         "TYPE": "NULL",
         "COMMENT": "Circ fan is blocked."
     },
-    "WATER_LOW": {
+    {
         "NAME": "WATER_LOW",
         "GROUP": "6",
         "CODE": "1",
@@ -35,7 +35,7 @@
         "TYPE": "NULL",
         "COMMENT": "Water tank is almost empty."
     },
-    "WATER_EMPTY": {
+    {
         "NAME": "WATER_EMPTY",
         "GROUP": "6",
         "CODE": "2",
@@ -44,4 +44,4 @@
         "TYPE": "NULL",
         "COMMENT": "Water tank is empty."
     }
-}
+]
