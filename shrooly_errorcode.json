@@ -9,6 +9,12 @@
         "KEY": "VOLTAGE_HIGH",
         "SEVERITY": "6",
         "TYPE": "Warning",
+        "DESC": "VBUS is too high."
+    },
+    {
+        "KEY": "CIRC_FAN_BLOCKED",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
         "DESC": "Circ fan is blocked."
     },
     {

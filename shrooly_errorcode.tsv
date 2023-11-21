@@ -1,5 +1,6 @@
 KEY	SEVERITY	TYPE	DESC
 VOLTAGE_LOW	6	Warning	VBUS is too low.
-VOLTAGE_HIGH	6	Warning	Circ fan is blocked.
+VOLTAGE_HIGH	6	Warning	VBUS is too high.
+CIRC_FAN_BLOCKED	6	Warning	Circ fan is blocked.
 WATER_LOW	6	Warning	Water tank is almost empty.
 WATER_EMPTY	6	Warning	Water tank is empty.
