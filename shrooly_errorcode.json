@@ -16,5 +16,11 @@
         "SEVERITY": "6",
         "TYPE": "Warning",
         "DESC": "Water tank is almost empty."
+    },
+    {
+        "KEY": "WATER_EMPTY",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Water tank is empty."
     }
 ]
