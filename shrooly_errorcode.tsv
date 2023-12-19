@@ -1,6 +1,17 @@
 KEY	SEVERITY	TYPE	DESC
-VOLTAGE_LOW	6	Warning	VBUS is too low.
-VOLTAGE_HIGH	6	Warning	VBUS is too high.
-CIRC_FAN_BLOCKED	6	Warning	Circ fan is blocked.
-WATER_LOW	6	Warning	Water tank is almost empty.
-WATER_EMPTY	6	Warning	Water tank is empty.
+VOLTAGE_LOW	7	Error	VBUS is too low.
+VOLTAGE_HIGH	5	Warning	VBUS is too high.
+CIRC_FAN_BLOCKED	7	Error	Circ fan is blocked.
+WATER_LOW	4	Info	Water tank is almost empty.
+WATER_EMPTY	8	Critical	Water tank is empty.
+WATER_OVERFLOW	6	Warning	Too much water in the tank.
+TEMP_HIGH	6	Warning	Temperature is too high.
+TEMP_LOW	6	Warning	Temperature is too low.
+RELATIVE_HUMIDITY_HIGH	5	Warning	High relative humidity detected.
+RELATIVE_HUMIDITY_LOW	5	Warning	Low relative humidity detected.
+TASK_MEMORY_CRITICAL	9	Critical	Task memory is critical.
+HEAP_MEMORY_CRITICAL	8	Critical	Heap memory is critical.
+I2C_DRIVER_INIT_FAILED	7	Error	I2C driver initialization failed.
+SPI_DRIVER_INIT_FAILED	7	Error	SPI driver initialization failed.
+GPIO_INIT_FAILED	6	Warning	GPIO initialization failed with pin number.
+HW_VERSION_UNKNOWN	10	Critical	Hardware version is not known.

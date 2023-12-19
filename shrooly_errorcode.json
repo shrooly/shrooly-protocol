@@ -1,32 +1,98 @@
 [
     {
         "KEY": "VOLTAGE_LOW",
-        "SEVERITY": "6",
-        "TYPE": "Warning",
+        "SEVERITY": "7",
+        "TYPE": "Error",
         "DESC": "VBUS is too low."
     },
     {
         "KEY": "VOLTAGE_HIGH",
-        "SEVERITY": "6",
+        "SEVERITY": "5",
         "TYPE": "Warning",
         "DESC": "VBUS is too high."
     },
     {
         "KEY": "CIRC_FAN_BLOCKED",
-        "SEVERITY": "6",
-        "TYPE": "Warning",
+        "SEVERITY": "7",
+        "TYPE": "Error",
         "DESC": "Circ fan is blocked."
     },
     {
         "KEY": "WATER_LOW",
-        "SEVERITY": "6",
-        "TYPE": "Warning",
+        "SEVERITY": "4",
+        "TYPE": "Info",
         "DESC": "Water tank is almost empty."
     },
     {
         "KEY": "WATER_EMPTY",
+        "SEVERITY": "8",
+        "TYPE": "Critical",
+        "DESC": "Water tank is empty."
+    },
+    {
+        "KEY": "WATER_OVERFLOW",
         "SEVERITY": "6",
         "TYPE": "Warning",
-        "DESC": "Water tank is empty."
+        "DESC": "Too much water in the tank."
+    },
+    {
+        "KEY": "TEMP_HIGH",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Temperature is too high."
+    },
+    {
+        "KEY": "TEMP_LOW",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Temperature is too low."
+    },
+    {
+        "KEY": "RELATIVE_HUMIDITY_HIGH",
+        "SEVERITY": "5",
+        "TYPE": "Warning",
+        "DESC": "High relative humidity detected."
+    },
+    {
+        "KEY": "RELATIVE_HUMIDITY_LOW",
+        "SEVERITY": "5",
+        "TYPE": "Warning",
+        "DESC": "Low relative humidity detected."
+    },
+    {
+        "KEY": "TASK_MEMORY_CRITICAL",
+        "SEVERITY": "9",
+        "TYPE": "Critical",
+        "DESC": "Task memory is critical."
+    },
+    {
+        "KEY": "HEAP_MEMORY_CRITICAL",
+        "SEVERITY": "8",
+        "TYPE": "Critical",
+        "DESC": "Heap memory is critical."
+    },
+    {
+        "KEY": "I2C_DRIVER_INIT_FAILED",
+        "SEVERITY": "7",
+        "TYPE": "Error",
+        "DESC": "I2C driver initialization failed."
+    },
+    {
+        "KEY": "SPI_DRIVER_INIT_FAILED",
+        "SEVERITY": "7",
+        "TYPE": "Error",
+        "DESC": "SPI driver initialization failed."
+    },
+    {
+        "KEY": "GPIO_INIT_FAILED",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "GPIO initialization failed with pin number."
+    },
+    {
+        "KEY": "HW_VERSION_UNKNOWN",
+        "SEVERITY": "10",
+        "TYPE": "Critical",
+        "DESC": "Hardware version is not known."
     }
 ]
