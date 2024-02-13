@@ -19,14 +19,14 @@
     },
     {
         "KEY": "WATER_LOW",
-        "SEVERITY": "4",
+        "SEVERITY": "3",
         "TYPE": "Info",
         "DESC": "Water tank is almost empty."
     },
     {
         "KEY": "WATER_EMPTY",
-        "SEVERITY": "8",
-        "TYPE": "Critical",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
         "DESC": "Water tank is empty."
     },
     {
@@ -94,5 +94,77 @@
         "SEVERITY": "10",
         "TYPE": "Critical",
         "DESC": "Hardware version is not known."
+    },
+    {
+        "KEY": "RP_COMMUNICATION_FAILED",
+        "SEVERITY": "9",
+        "TYPE": "Critical",
+        "DESC": "RP communcation failure."
+    },
+    {
+        "KEY": "SHT41_COMMUNICATION_FAILED",
+        "SEVERITY": "9",
+        "TYPE": "Critical",
+        "DESC": "SHT41 communcation failure."
+    },
+    {
+        "KEY": "WIFI_CONNECTION_FAILED",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "WiFi connection failed."
+    },
+    {
+        "KEY": "WIFI_CONNECTION_LOST",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "WiFi connection lost."
+    },
+    {
+        "KEY": "FILESYSTEM_MOUNT_ERROR",
+        "SEVERITY": "7",
+        "TYPE": "Error",
+        "DESC": "Filesystem mount error."
+    },
+    {
+        "KEY": "RTC_UNCONFIGURED",
+        "SEVERITY": "5",
+        "TYPE": "Warning",
+        "DESC": "RTC is not configured."
+    },
+    {
+        "KEY": "FDC1004_COMMUNICATION_ERROR",
+        "SEVERITY": "8",
+        "TYPE": "Critical",
+        "DESC": "FDC1004 communication error."
+    },
+    {
+        "KEY": "WATER_LEVEL_CALIBRATION_ZERO",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Water level calibration value is zero."
+    },
+    {
+        "KEY": "TOUCH_BUTTON_CALIBRATION_ZERO",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Touch button calibration value is zero."
+    },
+    {
+        "KEY": "CAP1206_COMMUNICATION_ERROR",
+        "SEVERITY": "8",
+        "TYPE": "Critical",
+        "DESC": "CAP1206 communication error."
+    },
+    {
+        "KEY": "MCP7940_COMMUNICATION_ERROR",
+        "SEVERITY": "8",
+        "TYPE": "Critical",
+        "DESC": "MCP7940 communication error."
+    },
+    {
+        "KEY": "HUMIDIFIER_BLOCKED",
+        "SEVERITY": "6",
+        "TYPE": "Warning",
+        "DESC": "Humidifier is blocked."
     }
 ]
