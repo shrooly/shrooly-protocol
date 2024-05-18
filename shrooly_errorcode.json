@@ -3,19 +3,19 @@
         "KEY": "VOLTAGE_LOW",
         "SEVERITY": "7",
         "TYPE": "Error",
-        "DESC": "VBUS is too low."
+        "DESC": "Voltage is too low."
     },
     {
         "KEY": "VOLTAGE_HIGH",
         "SEVERITY": "5",
         "TYPE": "Warning",
-        "DESC": "VBUS is too high."
+        "DESC": "Voltage is too high."
     },
     {
         "KEY": "CIRC_FAN_BLOCKED",
         "SEVERITY": "7",
         "TYPE": "Error",
-        "DESC": "Circ fan is blocked."
+        "DESC": "Air exchange fan is blocked."
     },
     {
         "KEY": "WATER_LOW",
@@ -87,35 +87,35 @@
         "KEY": "GPIO_INIT_FAILED",
         "SEVERITY": "6",
         "TYPE": "Warning",
-        "DESC": "GPIO initialization failed with pin number."
+        "DESC": "GPIO init failed."
     },
     {
         "KEY": "HW_VERSION_UNKNOWN",
         "SEVERITY": "10",
         "TYPE": "Critical",
-        "DESC": "Hardware version is not known."
+        "DESC": "Unknown HW version."
     },
     {
         "KEY": "RP_COMMUNICATION_FAILED",
         "SEVERITY": "9",
         "TYPE": "Critical",
-        "DESC": "RP communcation failure."
+        "DESC": "Water level board comm. fail."
     },
     {
         "KEY": "SHT41_COMMUNICATION_FAILED",
         "SEVERITY": "9",
         "TYPE": "Critical",
-        "DESC": "SHT41 communcation failure."
+        "DESC": "Hum. sensor failure."
     },
     {
         "KEY": "WIFI_CONNECTION_FAILED",
-        "SEVERITY": "6",
+        "SEVERITY": "5",
         "TYPE": "Warning",
         "DESC": "WiFi connection failed."
     },
     {
         "KEY": "WIFI_CONNECTION_LOST",
-        "SEVERITY": "6",
+        "SEVERITY": "5",
         "TYPE": "Warning",
         "DESC": "WiFi connection lost."
     },
